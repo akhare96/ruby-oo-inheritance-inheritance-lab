@@ -18,3 +18,23 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Halpert"
+
+# jim.learn(some_knowledge) <-- gives error undefined method learn for user jim
+
+some_more_knowledge = avi.teach
+
+steve.learn(some_more_knowledge)
+
+homer = Student.new
+homer.first_name = "Homer"
+homer.last_name = "Simpson"
+
+new_knowledge = avi.teach
+homer.learn(new_knowledge)
+
+puts "So far #{homer.first_name} has learned #{homer.knowledge} and #{steve.first_name} has learned #{steve.knowledge}"
+
